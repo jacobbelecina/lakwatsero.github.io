@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Albay Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background-image: linear-gradient(to right, #0d6178 3%, #c3e0e5 18%, #bfdde3 82%, #0d6178 97%);
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		background: -webkit-linear-gradient(#1A385A 40%, #466887 80%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align:center;
+		letter-spacing: 15px;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #17657a;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 8px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 350px;
+	}
+
+	div.desc {
+		padding: 15px;
+	}
+
+	.responsive {
+		padding: 0 20px;
+		float: left;
+		width: 500px;
+		margin-left: 30px;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 90%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+		margin-left: 50px;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	}
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	
+	
+	
+	</style>
+</head>
+<body>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1> 7  PLACES TO STAY IN Albay </h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Albay : Accommodation</h2>
+		<br>
+			<h5>April 18, 2021</h5>
+		<br>
+			<h5><i>Den Calasan</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Of all the volcanoes in the Philippines, Mayon Volcano or Mount Mayon is the most iconic because of its perfect cone shape. With the majestic view it offers, doing Mayon Volcano tours have become the main activity of travelers visiting the region. </p>
+			<br>
+			
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>The province of Albay is located in the Bicol Region of the Philippines. Its capital city, Legazpi, is situated near Mayon Volcano which became famous because of its near-perfect cone shape. Aside from this unique natural landmark, Albay also has a rich terrestrial and marine ecosystem.</p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  Misibis Bay Resort</li>
+			<br>
+				<div class = "p">
+					<p>Discover a tropical hideaway where luxurious seclusion meets wild natural beauty. This verdant, beach-fringed island offers sophisticated pleasures on land and water – from a relaxing foot wash, welcome upon arrival in your villa, to splashing, sailing or diving in the jewel-like sea and in the pristine lagoon.</p>
+					<br>
+							<a href="misibis.jpg" target="sameWindow">
+								<img class="img1" src="misibis.jpg" alt="Beach" title="Beach" >
+								
+							</a>
+					<br>
+					
+				</div>
+			
+			<li class="places" id="two"> Balay de la Rama</li>
+			
+			<br>
+				<div class = "p">
+					<p>In the Bicolano language, "Balay" means house, and we strive to be just that, your home away from home but with the backyard view of Mayon Volcano, to add a bit of spice to it. Balay de la Rama is a six-room family house, with six spacious rooms available for short-term homestay. Like any provincial home, it has big windows to promote natural ventilation, and indeed, the gentle, or sometimes stalwart breezes are enough to lull you to sleep as you take your afternoon siesta by the wooden sofa, or better yet, on the hammock by the balcony. If by any chance it is summer, and the mango tree is in full bloom, you can spend afternoons picking mango, or if that is too much effort, you can wait for them to fall, so you can eat them with hot bagoong (shrimp paste).</p>
+					<br>
+							<a href="balay.jpg" target="sameWindow">
+								<img class="img1" src="balay.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+				
+			<li class="places" id="three"> Hotel Venezia</li>
+			<br>
+				<div class = "p">
+					<p>Hotel Venezia features a 24 hour front desk, room service, and a concierge, to help make your stay more enjoyable. The property also boasts a pool and free breakfast. If you are driving to Hotel Venezia, free parking is available.</p>
+					<br>
+							<a href="venezia.jpg" target="sameWindow">
+								<img class="img1" src="venezia.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+				
+			<li class="places" id="four"> Casita Aurora Bed and Breakfast</li>
+			<br>
+				<div class = "p">
+					<p>Casita Aurora is a charming property built in the style of an old Filipino home, with the conveniences of modern living. The architecture and quaint decor brings you back to that genteel era. Guests have known to just linger in the breakfast room for hours without noticing it, having coffee and pastries, or just relaxing with the view of the tropical garden.</p>
+					<br>
+							<a href="casita.jpg" target="sameWindow">
+								<img class="img1" src="casita.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+			<li class="places" id="five"> Hotel Fina<li>
+			<br>
+				<div class = "p">
+					<p>Situated in the city of love - Tabaco City, Hotel Fina is a perfect choice for accommodation when visiting Albay. This modern hotel commands an excellent location and provides access to the city's biggest attractions. Visitors to the hotel can take pleasure in touring the city's top attractions such as Mayon Volcano, St. John the Baptist Old Church, Tabaco Port, Busay Falls. Hotel Fina welcomes guests to make the most of their stay in a vibrant and relaxing conveniently setting.</p>
+					<br>
+							<a href="fina.jpg" target="sameWindow">
+								<img class="img1" src="fina.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+				
+			<li class="places" id="six"> Lotus Blu Hotel</li>
+			<br>
+				<div class = "p">
+					<p>See why so many travelers make Lotus Blu Hotel their small hotel of choice when visiting Legazpi. Providing an ideal mix of value, comfort and convenience, it offers a family-friendly setting with an array of amenities designed for travelers like you.</p>
+					<br>
+							<a href="lotus.jpg" target="sameWindow">
+								<img class="img1" src="lotus.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+			
+			<li class="places" id="seven"> The Marison Hotel<ol>
+			<br>
+				<div class = "p">
+					<p>Strategically located in the heart of Legazpi City, The Marison Hotel is built to be the premium gateway for tourists and business travelers in the Bicol region. Situated just a quick five-minute drive from the Legazpi Airport, it’s easily one of the most centrally-located hotels in the city. Apart from being the perfect base for anyone who wants to see the beauty and splendor of Legazpi, The hotel maximum comfort and convenience.</p>
+					<br>
+							<a href="marison.jpg" target="sameWindow">
+								<img class="img1" src="marison.jpg" alt="Beach" title="Beach" >
+							</a>
+					<br>
+					
+				</div>
+				
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Misibis Bay Resort</a><br>
+					<a class="conte" href="#two"> Balay de la Rama</a><br>
+					<a class="conte" href="#three"> Hotel Venezia</a><br>
+					<a class="conte" href="#four">Casita Aurora Bed and Breakfast</a><br>
+					<a class="conte" href="#five">Hotel Fina</a><br>
+					<a class="conte" href="#six">Lotus Blu Hotel</a><br>
+					<a class="conte" href="#seven">The Marison Hotel</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+</body>
+</html>
