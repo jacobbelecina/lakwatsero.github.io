@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+		<title>Contact Us</title>
+	<style>
+
+	*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+	}
+	
+	.navbar {
+		overflow: hidden;
+		background-color: #155265;
+		height: 70px;
+	  
+	}
+	
+	.navbar a {
+		font-family: 'Quicksand', sans-serif;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 22px 17px;
+		text-decoration: none;
+		float:right;
+		font-size: 22px;
+	}
+
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+		background-color: #bbfaff;
+		color: black;
+	}
+
+
+	.navbar a.active {
+		background-color: #155265;
+		color: #f2f2f2;
+		float: left;
+		text-decoration:none;
+	}
+	
+	.dropdown {
+	  float: right;
+	  overflow: hidden;
+	}
+	
+	.dropdown .dropbtn {
+	  font-family: 'Quicksand', sans-serif;
+	  display: block;
+	  font-size: 22px;
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 22px 17px;
+	  background-color: inherit;
+	  margin: 0;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+	
+	input[type=text], textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	input[type=submit] {
+	  background-color: black;
+	  color: white;
+	  padding: 20px 30px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: blue;
+	}
+
+	.one {
+	  border-radius: 5px;
+	  background-color: #ddd;
+	}
+
+	.three {
+	  float: left;
+	  width: 680px;
+	  margin-top: 6px;
+	  padding: 20px;
+	}
+	
+	.four {
+	  position: relative;
+	  float: right;
+	  width: 50%;
+	  margin-top: 6px;
+	  padding: 20px;
+	}
+
+	.two:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	h2 {
+		text-align: center; 
+		font-size: 3.75em;
+		letter-spacing:20px;
+		font-family: 'Yeseva One', cursive;
+		background-color: #0b666e;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h3{	
+		text-align: center; 
+		font-family: 'Cinzel', serif;
+		font-size: 40px;
+		color: #0e4e59;
+	}
+	
+	h4{
+		text-align: center; 
+		font-family: 'Cinzel', serif;
+		font-size: 30px;
+		color: #155265;
+	}	
+
+	.p1 {
+		font-family: 'Poppins', sans-serif;
+		text-align: justify;
+		font-size: 20px;
+		text-indent: 70px;
+		line-height: 30px;
+		word-spacing: 7px;
+		padding: 20px;
+		margin: 20px;
+	}
+
+	label {
+	  font-size: 20px;
+	  font-family: 'Girassol', cursive;
+	}
+	
+	.right {
+		right: 20px;
+		border: 5px dashed #bf9e82;
+		background-color: #1a7d8f;
+		color: white;
+		padding-top: 5px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+	
+	.line1{
+		border: 6px solid #167D7F;
+	}
+	
+	img{
+		height: 540px;
+		margin-left: 90px;
+	}
+	
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: black;
+	}
+
+     </style>
+  </head>
+<body>
+
+	<div class="navbar">
+		<a href="../../Index.html" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="../ACCOMODATIONS/AccomodationLandingPage.html">Accomodation</a>
+		<a href="../FOODS/FOODS LANDING PAGE.html">Foods</a>
+		<a href="../TIPS/TRAVEL TIPS LANDING PAGE.html">Travel Tips</a>
+		<a href="../GUIDE/Travel Guide.html">Travel Guide</a>
+		<a href="../DESTINATIONS/DESTINATIONS LANDING PAGE.html">Destination</a>
+		<div class="dropdown">
+			<button class="dropbtn">About
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="../ABOUT/AboutUs.html">About Us</a>
+			  <a href="../ABOUT/Contact Us.html">Contact Us</a>
+			</div>
+		</div> 
+		<a href= "../../Index.html">Home</a>
+	</div>
+
+	<div class="one"><br><br>
+		<div style="text-align:center">
+			<h2>Contact Us</h2><br><br><br>
+				<h3>SAY HELLO!</h3>
+		</div>	
+			<hr class = "line1"><br>
+			<div class = "right">
+				<p class="p1">We <b>LOVE</b> to hear from you guys, so whatever the topic might be, please feel free to drop us a line. 
+			If you don’t receive a swift response, We probably traveling at that moment — but we will get back to you ASAP!</p>
+			</div>
+		<br>
+	<div class="two">
+		<div class="three">
+			<img src="../../IMAGES/ABOUT_IMAGES/logo.png" style="width:85%">  
+		</div>
+		<div class="four">
+			<form action="/action_page.php">
+				<label for="fname">Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+				<label for="emailad">Email Address</label>
+				<input type="text" id="emailad" name="email" placeholder="Enter your real email address...">
+		
+				<label for="emailad">Subject</label>
+				<input type="text" id="subject" name="subject" placeholder="Enter your subject..">
+
+				<label for="comment">Comment</label>
+				<textarea id="comment" name="comment" placeholder="Write something.." style="height:170px"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	</div>
+	
+	<div class="footer">
+	  <p>Copyright © 2021 All Rights Reserved by LAKWATSEROS.</p>
+	</div>
+
+</body>
+</html>

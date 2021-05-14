@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<base target="newSpace" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>ImageMap</title>
+	<script language = "JavaScript">
+		function writeText(txt){
+			document.getElementById("desc").innerHTML=txt;
+	}		
+		
+		function dissolveText(txt){
+			document.getElementById("desc").innerHTML=txt;
+		}
+</script>
+    <style>	
+	p#desc{
+	   font-family: 'Dela Gothic One', cursive;
+	   font-size:50px;
+	   color:white;
+	   text-align:center;
+	}   
+	
+	body {
+	   background-image: linear-gradient(to right, green, blue );
+	}
+	</style>
+</head>
+<body>
+<br>
+<div align="center">
+    <img src="places.jpg" usemap="#world">
+	<map name="world">
+	<area shape="rect" coords="28,38,481,293" href="LEH_LosAngeles_ITAD.html"
+	onMouseOver= "writeText('LosAngeles');" onMouseOut = "dissolveText('');"/>
+	
+	<area shape="rect" coords="29,329,482,616" href="LEH_Japan_ITAD.html"
+	onMouseOver= "writeText('Japan');" onMouseOut = "dissolveText('');"/>
+	
+	<area shape="circle" coords="653,160,145" href="LEH_SouthKorea_ITAD.html"
+	onMouseOver= "writeText('SouthKorea');" onMouseOut = "dissolveText('');"/>
+	
+	<area shape="circle" coords="962,129,130" href="LEH_Italy_ITAD.html"
+	onMouseOver= "writeText('Italy');" onMouseOut = "dissolveText('');"/>
+	
+	<area shape="poly" coords="641,420,1009,260,1115,495,745,654" href="LEH_France_ITAD.html"
+	onMouseOver= "writeText('France');" onMouseOut = "dissolveText('');"/>
+	
+	</map>
+</div>	
+
+<p id="desc"></p>
+
+
+</body>
+</html>	

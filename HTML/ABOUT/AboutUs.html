@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		.navbar {
+			overflow: hidden;
+			background-color: #155265;
+			height: 70px;
+	  
+		}
+	
+		.navbar a {
+			font-family: 'Quicksand', sans-serif;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 22px 17px;
+			text-decoration: none;
+			float:right;
+			font-size: 22px;
+		}
+
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: #bbfaff;
+			color: black;
+		}
+
+
+		.navbar a.active {
+			background-color: #155265;
+			color: #f2f2f2;
+			float: left;
+			text-decoration:none;
+		}
+		
+		.dropdown {
+		  float: right;
+		  overflow: hidden;
+		}
+		
+		.dropdown .dropbtn {
+		  font-family: 'Quicksand', sans-serif;
+		  display: block;
+		  font-size: 22px;
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 22px 17px;
+		  background-color: inherit;
+		  margin: 0;
+		}
+		
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #bbfaff;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		.section
+		{
+			width: 100%;
+			min-height: 100vh;
+			background-color: #ddd;
+		}
+		.container
+		{
+			width: 80%;
+			display: block;
+			margin: auto;
+			padding-top: 100px;
+		}
+		.content-section
+		{
+			float: left;
+			width: 55%;
+		}
+		.image-section
+		{
+			float: right;
+			width: 40%;
+		}
+		.image-section img
+		{
+			width: 100%;
+			height: auto;
+		}
+		.content-section .title
+		{
+			text-transform: uppercase;
+			font-size: 28px;
+			letter-spacing: 10px;
+		}
+		.content-section .content h3
+		{
+			margin-top: 20px;
+			color: #5d5d5d;
+			font-size: 21px;
+		}
+		.content-section .content p
+		{
+			margin-top: 10px;
+			font-family: sans-serif;
+			font-size: 17px;
+			line-height: 1.5;
+		}
+		.content-section .content .button
+		{
+			margin-top: 30px;
+		}		
+		.content-section .content .button a
+		{
+			background-color: #3d3d3d;
+			padding: 12px 40px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 25px;
+			letter-spacing: 1.5px;
+		}
+		.content-section .content .button a:hover
+		{
+			background-color: #136877;
+			color: #fff;
+		}
+		.content-section .social
+		{
+			margin: 40px 40px;
+		}		
+		.content-section .social i
+		{
+			color:#136877;
+			font-size: 30px;
+			padding: 0px 10px;
+		}
+		.content-section .social i:hover
+		{
+			color: #3d3d3d;
+		}
+		@media screen and (max-width: 628px)
+		{
+			.container{
+				width: 80px;
+				display: block;
+				margin: auto;
+				padding-top: 50px;	
+			}
+			.content-section{
+				float: none;
+				width: 100%;
+			}
+			.image-section img{
+				width: 100%;
+				height: auto;
+			    display: block;
+				margin: auto;
+			}
+			.image-section{
+				float: none;
+				width: 100%;
+				display: block;
+				margin: auto;
+			}
+			.content-section .title{
+				text-align: center;
+				font-size: 19px;
+			}
+			.content-section .content .button{
+				text-align: center;
+			}
+			.content-section .content .button a{
+				padding: 9px 30px;
+			}
+			.content-section .social{
+				text-align: center;
+			}
+		}
+		
+		.footer {
+		  padding: 20px;
+		  text-align: center;
+		  background: black;
+		  color: white;
+		}
+		
+		
+	</style>
+
+</head>
+
+<body>
+	
+	<div class="navbar">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="../ACCOMODATIONS/AccomodationLandingPage.html">Accomodation</a>
+		<a href="../FOODS/FOODS LANDING PAGE.html">Foods</a>
+		<a href="../TIPS/TRAVEL TIPS LANDING PAGE.html">Travel Tips</a>
+		<a href="../GUIDE/Travel Guide.html">Travel Guide</a>
+		<a href="../DESTINATIONS/DESTINATIONS LANDING PAGE.html">Destination</a>
+		<div class="dropdown">
+			<button class="dropbtn">About
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="AboutUs.html">About Us</a>
+			  <a href="Contact Us.html">Contact Us</a>
+			</div>
+		</div> 
+		<a href= "../../Index.html">Home</a>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>RHENIEL JACOB M. BELECINA</h1>
+				</div>
+
+				<div class="content">
+					<h3>TEAM LEADER</h3>
+					<p></p>
+				
+				<div class="button">
+					<a href="AUTHORS/BELECINA_LANDING_PAGE_ITAD/Belecina_LANDING PAGE_ITAD.html">View More</a>
+				</div>
+				</div>
+				<div class="social">
+				<a href="https://www.facebook.com/jacob.belecina/"><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>								
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="../../IMAGES/ABOUT_IMAGES/cobe.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		  <div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>RAIDEN JOSEPH CHRISTIAN L. CALASAN</h1>
+				</div>
+
+				<div class="content">
+						<h3>MEMBER</h3>
+						<p></p>
+					<div class="button">
+						<a href="AUTHORS/CALASAN_LANDING PAGE_ITAD/">View More</a>
+					</div>
+					
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/DenCalasan"><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>								
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="../../IMAGES/ABOUT_IMAGES/den.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>MARK ANGELO S. CATUNGAL</h1>
+				</div>
+
+				<div class="content">
+						<h3>MEMBER</h3>
+						<p></p>
+					<div class="button">
+						<a href="AUTHORS/CATUNGAL_LANDING PAGE_ITAD/CATUNGAL_LANDINGPAGE.HTML">View More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/markcatungal08"><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>								
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="../../IMAGES/ABOUT_IMAGES/gelo.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>DAVID ALLAN S. LEH</h1>
+				</div>
+
+				<div class="content">
+						<h3>MEMBER</h3>
+						<p></p>
+					<div class="button">
+						<a href="AUTHORS/LEH_LANDING PAGE_ITAD/landingpage.html">View More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/david.leh.14"><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>								
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="../../IMAGES/ABOUT_IMAGES/david.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <p>Copyright © 2021 All Rights Reserved by L A K W A T S E R O S.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather+Sans&family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:wght@500&family=Nunito:wght@900&family=Quicksand:wght@700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <title>My beat</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	
+	.navbar{
+		width: 100%;
+		height: 55px;
+		margin: auto;
+		display: block;
+		align-items: center;
+	}
+	
+	nav{
+		flex: 1;
+		padding-left: 60px;
+		background: rgba(0,0,0,0.4);
+	}
+
+	li{
+		list-style: none;
+		margin: 0 20px;
+		display: inline-block;
+		line-height: 80px;
+	}
+
+	li a{
+		font-size: 20px;
+		font-family: 'Quicksand', sans-serif;
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active){
+		background-color: #111;
+	}
+
+	.active{
+		background-color: #4a919e ;
+		color: #f2f2f2;
+	}
+	
+	body{
+		background: linear-gradient(to bottom left, #b9d5d5 30%, #74b2b7  60%); 
+		font-size:1.750em;
+		font-family: Verdana, Tahoma, Sans-serif;
+	}
+	
+	h1{
+		text-align: center; 
+		font-size: 3.75em;
+		font-family: 'Yeseva One', cursive;
+		background-color: #0b666e;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		text-align: center; 
+		font-family: 'Cinzel', serif;
+		font-size: 50px;
+		color: #d48a70;
+	}	
+	
+	.h2a{
+		text-align: center; 
+		font-family: 'Cinzel', serif;
+		font-size: 50px;
+		color: #ebac96;
+	}	
+	
+	p{
+		font-family: 'Poppins', sans-serif;
+		text-align: justify;
+		font-size: 20px;
+		text-indent: 70px;
+		line-height: 30px;
+		word-spacing: 7px;
+		padding: 20px;
+		margin: 20px;
+	}
+	
+	.pa{
+	color: #116263;
+	}
+	
+	audio{
+		margin-left: auto;
+		margin-right: auto;
+		display: block; 
+		box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+		border-radius: 90px;
+		border-style: solid;
+		border-color: #ced7d8; 
+		border-width: 5px;
+
+	}
+	
+	img{
+		width: 300px;
+		height:300px;
+		padding: 20px;	
+	}
+	
+		.right {
+			right: 10px;
+			border: 5px solid #bf9e82;
+			background-color: #29A0B1;
+			color: #caeded;
+			padding-top: 5px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+		}
+		
+		.two {
+			border: 5px solid #de6e57;
+			background-color: #29A0B1;
+			color: #caeded;
+			padding-top: 30px;
+			padding-right: 10px;
+			padding-bottom: 90px;
+			padding-left: 10px;
+		}
+		
+		.three {
+			border: 5px solid #bf9e82;
+			background-color: #29A0B1;
+			color: #caeded;
+			padding-top: 80px;
+			padding-right: 10px;
+			padding-bottom: 120px;
+			padding-left: 10px;
+		}
+		
+		.four {
+			border: 4px solid #de6e57;
+			background-color: #29A0B1;
+			color: #caeded;
+			padding-top: 20px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			padding-left: 10px;
+		}
+	
+	.Line1{
+		border: 6px solid #167D7F;
+	}
+	
+	.link{
+		text-align: center;
+	}
+		
+	.link a:link{
+		background-color: none;
+		color: white;
+		border: 2px solid #167D7F;
+		border-radius: 20px;
+		border-width: 5px;
+		padding: 10px 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	
+	} 
+	
+	.link a:visited {
+		color: #315f94;
+		border: 2px solid #167D7F;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	.link a:hover{
+		background-color: #0b666e;
+		color: #e5e5dc;
+	}
+	
+	
+	.link a:active {
+		background-color: #d48a70;
+		color: #6b7b8c;
+	}
+	
+	.noIndent{
+		text-align: center;
+		font-size: 25px;
+	}
+	
+	.noIndent:link {
+		color: red;
+	}
+
+
+	.noIndent:visited {
+		color: #bfb602;
+	}
+
+
+	.noIndent:hover {
+		color: #ab6a1b;
+	}
+
+
+	.noIndent:active {
+		color: blue;
+	}
+	
+    </style>
+</head>
+<body id="top">
+	<link rel="stylesheet" type="text/css"/>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.18.2021-->
+	
+	<div class = "navbar">
+		<nav>
+			<ul>
+				<li><a class="active" href="../Belecina_LANDING PAGE_ITAD.html">Home</a></li>
+				<li><a href ="../Belecina_ABOUTME_ITAD/BELECINA_ABOUTME_ITAD.html" target = "sameWindow" title = "About Me">
+				About Me</a></li>
+				<li><a href ="../Belecina_MY BEAT_ITAD/Belecina_MY BEAT_ITAD.html" target = "sameWindow" title = "My Beat">
+				My Beat</a></li>
+				<li><a href ="../Belecina_MY KIND OF FILM_ITAD/Belecina_MY KIND OF FILM_ITAD.html" target = "sameWindow" title = "My Kind of Film">
+				My Kind of Film</a></li>
+				<li><a href ="../Belecina_PHOTOGALLERY_ITAD/BELECINA_PhotoGallery_ITAD.html" target = "sameWindow" title = "Photo Gallery">
+				Photo Gallery</a></li>
+				<li><a href ="../Belecina_DREAM DESTINATION_ITAD/Belecina_ImageMap_ITAD.html" target = "sameWindow" title = "Dream Destination">
+				Dream Destination</a></li>
+				<li><a href ="../Belecina_RESUME_ITAD/BELECINA_RESUME_ITAD.html" target = "sameWindow" title = "RESUME">
+				Resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<h1>My Beat</h1>
+	<br>
+		<div class = "link">
+			<a href="#PopMusic" title="Pop Music">Pop Music</a>&nbsp;&nbsp;&nbsp;
+			<a href="#RBMusic" title="R & B Music">R & B Music</a>&nbsp;&nbsp;&nbsp;
+			<a href="#OPM" title="OPM Music">OPM Music</a>&nbsp;&nbsp;&nbsp;
+	</div>
+		<br>
+	
+	
+	<div class = "pa">
+		<p>&nbsp; For me, asking you what your favorite music is one of the hardest question that I can face. 
+			Music has a great part in my life. 
+			Since I was a child, I always listened to music, every time I want to escape in this world. 
+			Music makes me calm and I feel motivated when I’m feeling down. 
+			Even when I’m doing assignments and projects I listen to music because I can gather all my thoughts when I start play the music. 
+			The three genre that I always listen is Pop Music, R&B, and OPM.</p>
+	</div>
+	<br>
+	<hr class = "Line1">
+	<br>
+	<h2 id="PopMusic"> Pop Music </h2>
+	<br>
+	<hr class = "Line1">
+	<br>
+		<div class = "pa">
+			<p>I love pop music because it have a good rhythm, a catchy melody, and are easy to remember and sing along to. 
+			Pop music usually are between two and five minutes long, and the lyrics are usually about the joys and problems of love and relationships. 
+			It may include elements of rock, hip hop, reggae, dance, R&B, jazz, electronic, and sometimes folk music and various other styles. 
+			A pop song may be written by a professional songwriter or composer whose work is then given to a professional singer, or it may be written by the singer who performs it. 
+			Example of a composer, a writer and a singer of a pop music is Taylor Swift, Jeremy Zucker, Olivia Rodrigo, Katty Perry and many more. </p>
+		</div>
+	<br>
+	<img src="image1.jpg" alt="Afterglow" style="float: left" title="Taylor Swift Lover's Album">
+	
+		<div class = "right">
+			<p><b>Afterglow</b> is my favorite pop song in which Taylor Swift is basically acknowledging her own shortcomings in a romantic relationship.  
+			Or more specifically, she is for the most part taking the blame for the relationship with the man she loves dissolving.  
+			Thus she is apologizing to her lover and begging his forgiveness, as she is still very much in love. 
+			And via these requests, she is also implicitly asking him to exercise patience. 
+			In other words, it seems her tendency to habitually abuse him or at least overreact to conflicts 
+			they have is the true source of the high level of tension present in their relationship. 
+			Thus she is assuring him that, even if she does relapse and does something to hurt him again, in actuality he is her heart’s desire. 
+			And it would pain her greatly if she were to lose him forever. </p>
+	</div>
+	<br>
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+	<b><i><q>I don't wanna lose this with you
+				It's all me, just don't go</q></i></b>
+	</pre>
+	<audio controls>
+	  <source src="audio.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	
+	<img src="image1.1.jpg" alt="always, i'll care" style="float: right" title="Album Cover">
+	
+		<div class = "two">
+		
+			<p><b>always, i’ll care</b> is a breakup song by <b> Jeremy Zucker</b> but it doesn’t stumble into the classic tropes of bitterness and pain, 
+			though those emotions can be quite necessary. always, i’ll care takes a different approach to view the end of a relationship. 
+			It’s about mutual love lost and coming to terms with the conclusion of a relationship. 
+			The song is special, but it sticks to Jeremy Zucker’s reflective and mellow sound.</p>
+		</div>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+					<b><i><q>I'll be better than I was before
+			Despite every text of yours ignored</q></i></b>
+	</pre>
+		<audio controls>
+			<source src="audio1.2.mp3" type="audio/mp3">
+		</audio>
+	
+	
+	<br>	
+	<img src="image1.2.jpg" alt="Driver License" style="float: left" title="Album Cover">
+	
+	<div class = "three">
+		<p>On the surface, <b>drivers license</b> is a pop song by <b>Olivia Rodrigo</b> about a heartbroken teenager watching her ex move on.
+		Its killing you inside when you see your love one getting over you.</p>
+	</div>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+	<b><i><q>And I know we weren't perfect 
+		but I've never felt this way for no one</q></i></b>
+	</pre>
+	
+	<audio controls>
+	  <source src="audio1.3.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	<br>
+	
+	<img src="image1.4.jfif" alt="august" style="float: right" title="Album Cover">
+	
+	<div class =  "two">
+		<p>Taylor Swift’s <b>august</b> is part of her 2020 surprise album “Folklore”. 
+		Just like many of the songs on that project, this song emits a huge amount of youthful romance and love. 
+		However, this particular one narrows things down a little bit to a specific theme of romance during the summer. 
+		And as we all know, the month of August is one of the summer months. 
+		It is for this reason that Taylor titled the song after the summer month in question.</p>
+	</div>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+			<b><i><q>August slipped away into a moment in time
+						Cause it was never mine</q></i></b>
+	</pre>
+	
+	<audio controls>
+	  <source src="audio1.1.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	<hr class = "Line1">
+	<br>
+	<h2 id="RBMusic"> R & B Music </h2>
+	<br>
+	<hr class = "Line1">
+	<br>
+	<div>
+		<p>Another music I love is R&B Music. 
+		Rhythm and blues, also called rhythm & blues or R&B, 
+		term used for several types of postwar African-American popular music, 
+		as well as for some white rock music derived from it. 
+		The genre features a distinctive record production style, drum machine-backed rhythms, 
+		pitch corrected vocals, and a smooth, lush style of vocal arrangement. 
+		Electronic influences are becoming an increasing trend and 
+		the use of hip hop or dance-inspired beats are typical, 
+		although the roughness and grit inherent in hip hop may be reduced and smoothed out.
+		George Kusunoki Miller, better known by his stage name Joji  is was of a R & B singer which have a greatest hits in out times.</p>
+	</div>
+	<img src="image2.jfif" alt="Nectar Album" style="float: right" title="Ben and Ben">
+	<div class ="four">
+		<p><b>Sanctuary</b> is one of my favorite R & B music.
+		It is a love song in which Joji is identifying his significant other as his <q><b><i>sanctuary</i></b></q>. 
+		This is due to her fulfilling his desire to (fall) in love.  
+		And they share a mutual relationship goal, which is sincerity.
+		So basically, this track is an expression of his yearning for the two of them to be together.  
+		And he is especially fond of their nighttime interludes. 
+		Indeed Joji specifically tells his boo that when she needs some loving in the evening, he is just one call away. 
+		Moreover he has already concluded that this particular individual is the one. 
+		Or as the title implies, he enjoys her company so much that she has become his sanctuary.</p>
+	</div>
+	<br>
+	<audio controls>
+	  <source src="audio2joji.mp3" type="audio/mp3">
+	</audio>
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+		<b><q>If you've been waiting for falling in love
+				Babe, you don't have to wait on me</q></b>
+	</pre>
+	<br>
+	<img src="image2.3.jpg" alt="Save your Tears" style="float: left" title="Album Cover">
+	
+	<div class = "two">
+		<p><b><i>Save your Tears</b></i> is one of my favorite R & B music. It was composed and sang by <b>The Weekend</b>.
+		It is addressing an ex-girlfriend. And regardless of what type of first impression one may get when reading its title, 
+		the reason he is actually telling her to “save your tears” is because he wants to get back with her. 
+		He basically doesn’t want her to cry when she sees him.  
+		That is to say that he acknowledges that he broke her heart. 
+		And further elaborating in the third verse, he lets it be known that made promises to her, i.e. always being by her side, which he didn’t keep.</p>
+	</div>
+	<br>
+	<audio controls>
+	  <source src="audio2.2.mp3" type="audio/mp3">
+	</audio>
+
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+				<b><q>I realize that I'm much too late
+							And you deserve someone better</q></b>
+	</pre>
+	<br>
+	<img src="image2.2.jpg" alt="Good Days" style="float: left" title="Album Cover">
+	
+	<div class ="right">
+		<p><b><i>Good Days</i></b> is also one of my favorite R & B music. It was sang by <b>Sza</b>.
+		This song isn’t your standard ‘getting over the past and looking forward to the future’ kind of fare. 
+		After all this is SZA we’re talking about. A
+		nd the tune, which is fundamentally about her overcoming a toxic romance, even features Biblical references. 
+		It also gets quite philosophical near the end, with the singer espousing a live-in-the-present type of disposition. 
+		Indeed the way she puts it bygones are bygones, and for an individual to live in the past as opposed to facing the present is basically an act of vanity. 
+		And as such she conscientiously keeps a positive disposition, believing that “good days” still lie ahead despite the unfavorability of the past.</p>
+	</div>
+	<br>
+	<audio controls>
+	  <source src="audio2.3.mp3" type="audio/mp3">
+	</audio>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+		<b><q>I try to keep from losin' the rest of me
+						I worry that I wasted the best of me on you</q></b>
+	</pre>
+	
+	<img src="image2.4.jpg" alt="Crying Over You" style="float: left" title="Album Cover">
+	
+	<div class = "three">
+		<p><b><i>Crying Over You</i></b> is also one of my favorite R & B music. It was sang by <b>Honne</b>.
+		This song is all about giving up to someone because you sees that you are not compatible in life.
+		It heartbreaking hearing the taughts of your love one that she is no longer happy on your relationship.</p>
+	</div>
+	<br>
+	<audio controls>
+	  <source src="audio2.4.mp3" type="audio/mp3">
+	</audio>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+			<b><q>We had our flaws I'll be the first to admit
+				And we both struggled to commit</q></b>
+	</pre>
+	<br>
+	<hr class = "Line1">
+	<br>
+	<h2 class = "h2a" id="OPM"> OPM Music </h2>
+	<br>
+	<hr class = "Line1">
+	<br>
+	<div>
+		<p>Lastly, I love Original Pilipino Music or commonly known as Original Pinoy Music, O
+		riginal Philippine Music or OPM for short that is originally referred to Philippine pop songs, particularly ballads, 
+		that were popular in the Philippines during the late 70s to the present. 
+		I love local songs because OPM scene is filled with heart-wrenching songs that can definitely make my heart cry 
+		because there them is all about fixing you’re broken heart. OPM artists can really find a way to get under our skins.
+		Supporting our local songs is the best thing to do because we own it and  it can be considered as one the best gifts we can give to the next generation. 
+		Ben&Ben is one of example of OPM band.
+		Ben&Ben is one of the famous band in the present with their greatest hits like leaves, Pagtingin, Araw-araw and many more.</p>
+	</div>
+	<br>
+	<img src="image3.png" alt="Ben&Ben Album" style="float: left" title="Ben and Ben">
+	<div class = "two">
+		<p><b>Araw-araw</b> by Ben&Ben is my mood whenever i listen on OPM hits.
+		It is all about	about loving someone truly. 
+		This song is all about choosing someone despite of all circumstances. 
+		Many people are easily giving up when they faced problems but this song taught me 
+		to always choose your <b><i>mahiwaga</i></b> even there is crisis between you two. 
+		When you find the right person at the right time, you should do everything to win her heart. 
+		And when you win, you should make her feel that she the only one in your heart. </p>
+	</div>
+	<br>
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+				<b><q>Mahiwaga
+					Pipiliin ka sa araw-araw</q></b>
+	</pre>
+	
+	<audio controls>
+	  <source src="audio3.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	
+	<div class = "right">
+	<p><b>Sa Susunod na Habang Buhay</b> is also one of Ben&Ben songs. 
+	Every time I listen to this songs is always breaks my heart.
+	It talks about a love lost, broken promises, and wishing for the possibility of having their happily ever after in another lifetime.
+	Also, it is seemingly about getting your heart and trust broken by the person you love, 
+	and yet still choosing to dedicate your love to the same person, even if it means waiting for another lifetime. </p>
+	</div>
+	<br>
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+				<b><q>Hindi ba pangako mo nu'ng una,
+							tiwala'y iingatan?</q></b>
+	</pre>
+	<audio controls>
+	  <source src="audio4.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	<div class ="right">
+	<p><b>Masyado pang Maaga</b> is also one of Ben&Ben songs. 
+	This song is heartbreak put finely in poetry. 
+	It discusses the pain of trying to fix a relationship which eventually ends up in vain. 
+	Moreover, it shows some common struggles that couples experience – 
+	miscommunication and a never-ending conflict on each other’s faults.</p>
+	</div>
+	
+	<pre style="font-family: 'Cutive Mono'; font-size: 24px; color:black;">		      			
+						<b><q>Sa'n nagkamali? Pwede bang bumawi?
+				Masyado pang maaga</q></b>
+	</pre>
+	
+	<audio controls>
+	  <source src="audio3.2.mp3" type="audio/mp3">
+	</audio>
+	<br>
+	<hr class="Line1">
+	
+	<b><a href="#top"><p class="noIndent" style="margin:20px;">Go Top</p></a><b/>
+</body>
+</html>
