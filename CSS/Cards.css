@@ -239,3 +239,31 @@
 		 transform: translate(5px, -50%);
 		 opacity: 1;
 	}
+	
+	.but a {
+	  text-decoration: none;
+	  display: inline-block;
+	  padding: 40px 50px;
+	  margin: 20px;	
+	}
+
+	.but a:hover {
+	  background-color: darkblue;
+	  color: red;
+	}
+
+	.previous {
+	  background-color: lightblue;
+	  color: black;
+	}
+
+	.next {
+	  background-color: lightblue;
+	  color: black;
+	  float:right;
+	  
+	}
+
+	.round {
+	  border-radius: 100%;
+	}
